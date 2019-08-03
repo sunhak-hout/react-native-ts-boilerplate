@@ -1,8 +1,15 @@
+import { formatDate } from '@/libs/moment';
 import React from 'react';
-import { Text } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
+
 
 const HomeScreen: React.FC = () => {
-  return <Text>Hello From HomeScreen</Text>;
+  return (
+    <SafeAreaView>
+      <Text>Hello From HomeScreen</Text>
+      <Text>Today is: {formatDate(new Date())}</Text>
+    </SafeAreaView>
+  );
 };
 
 export default HomeScreen;
