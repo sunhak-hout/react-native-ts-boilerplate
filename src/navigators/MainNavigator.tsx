@@ -15,11 +15,11 @@ const MainNavigator = createBottomTabNavigator(
       tabBarIcon: ({ focused, horizontal, tintColor }) => {
         const { routeName } = navigation.state;
         const iconName = getIconName(routeName as RouteName);
-        return <AppIcon name={iconName} color={focused ? 'red' : 'grey'} />;
+        return <AppIcon name={iconName} color={focused ? '#42adf5' : 'grey'} />;
       },
     }),
     tabBarOptions: {
-      activeTintColor: 'red',
+      activeTintColor: '#42adf5',
       inactiveTintColor: 'grey',
     },
   },
