@@ -1,15 +1,8 @@
-import React, { Fragment } from 'react';
-import { SafeAreaView } from 'react-native';
-import HomeScreen from '@/screens/HomeScreen';
+import MainNavigator from '@/navigators/MainNavigator';
+import React from 'react';
 
 const App = () => {
-  return (
-    <Fragment>
-      <SafeAreaView>
-        <HomeScreen />
-      </SafeAreaView>
-    </Fragment>
-  );
+  return <MainNavigator />;
 };
 
 export default App;
